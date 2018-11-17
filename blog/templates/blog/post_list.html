@@ -3,20 +3,18 @@
     <title>Jullsbv Blog</title>
 </head>
 <body>
-    <<div>
-            <h1><a href="/">Jullsbv Blog</a></h1>
-        </div>
+    <div>
+        <h1><a href="/">Jullsbv Blog</a></h1>
+    </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Mi primer post</a></h2>
-            <p>El primer post de este blog explica qué es la arquitectura.</p>
-        </div>
+    <div>
+        {% for post in posts %} {{ post }}{% endfor %}
+    </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Mi segundo post</a></h2>
-            <p>El segundo post de este blog habla de la fotografía.</p>
-        </div>
+    <div>
+        <p>published: 14.06.2014, 12:14</p>
+        <h2><a href="">Primer post</a></h2>
+        <p>El primer post de este blog habla de la aqruitectura.</p>
+    </div>
 </body>
 </html>
